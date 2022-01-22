@@ -20,17 +20,23 @@ const sortArr = [
 
 const cardReducer = (prevState, card) => {
   const newState = { ...prevState };
-  const cards = prevState[card.suit] ? [...prevState[card.suit], card] : [card];
-  newState[card.suit] = cards.sort(
+
+  newState[card.suit] = [...newState[card.suit], card].sort(
     (a, b) => sortArr.indexOf(a.value) - sortArr.indexOf(b.value)
   );
+
   return newState;
 };
 
 export const CardFetcher = () => {
   const [deck, setDeck] = useState();
   const [queens, setQueens] = useState(0);
-  const [cards, setCards] = useReducer(cardReducer, {});
+  const [cards, setCards] = useReducer(cardReducer, {
+    SPADES: [],
+    HEARTS: [],
+    DIAMONDS: [],
+    CLUBS: [],
+  });
 
   const getDeck = async () => {
     try {
