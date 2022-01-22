@@ -33,9 +33,9 @@ export const CardFetcher = () => {
   const [queens, setQueens] = useState(0);
   const [cards, setCards] = useReducer(cardReducer, {
     SPADES: [],
+    CLUBS: [],
     HEARTS: [],
     DIAMONDS: [],
-    CLUBS: [],
   });
 
   const getDeck = async () => {
