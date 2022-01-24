@@ -1,8 +1,5 @@
-# Frontend Interview Project
+# Frontend  Project
 
-You have elected to do a take-home project as a part of your interview for a front-end developer position at Canopy. Your goal is to implement a small project in advance of the interview. Part of your interview we will discuss the implementation details of your solution.
-
-**_Please DO NOT submit your solution as a pull request to this repository or fork this repository. Doing so lets other candidates see your solution and we have to delete and recreate the repository when this happens._** Instead, create your own repository from scratch that implements a solution to the problem described here.
 
 ## To run the project, run the following command:
 
